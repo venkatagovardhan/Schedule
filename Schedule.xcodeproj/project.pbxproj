@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,12 @@
 		84131523254B77AE00F0B6EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84131521254B77AE00F0B6EF /* LaunchScreen.storyboard */; };
 		8413152E254B77AE00F0B6EF /* ScheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413152D254B77AE00F0B6EF /* ScheduleTests.swift */; };
 		84131539254B77AF00F0B6EF /* ScheduleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131538254B77AF00F0B6EF /* ScheduleUITests.swift */; };
+		8413154D254B853700F0B6EF /* Maven Pro Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8413154A254B853700F0B6EF /* Maven Pro Bold.otf */; };
+		8413154E254B853700F0B6EF /* LeagueGothic-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8413154B254B853700F0B6EF /* LeagueGothic-Regular.otf */; };
+		8413154F254B853700F0B6EF /* Maven Pro Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8413154C254B853700F0B6EF /* Maven Pro Regular.otf */; };
+		84131554254B8F8900F0B6EF /* cardDetailsTableviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131553254B8F8900F0B6EF /* cardDetailsTableviewCell.swift */; };
+		8413155C254BA79800F0B6EF /* detailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413155B254BA79800F0B6EF /* detailsModel.swift */; };
+		84131562254CA18F00F0B6EF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 84131561254CA18F00F0B6EF /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,11 @@
 		84131534254B77AF00F0B6EF /* ScheduleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScheduleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84131538254B77AF00F0B6EF /* ScheduleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleUITests.swift; sourceTree = "<group>"; };
 		8413153A254B77AF00F0B6EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8413154A254B853700F0B6EF /* Maven Pro Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Maven Pro Bold.otf"; path = "../../../../Downloads/Schedule Exercise/Fonts/Maven Pro Bold.otf"; sourceTree = "<group>"; };
+		8413154B254B853700F0B6EF /* LeagueGothic-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "LeagueGothic-Regular.otf"; path = "../../../../Downloads/Schedule Exercise/Fonts/LeagueGothic-Regular.otf"; sourceTree = "<group>"; };
+		8413154C254B853700F0B6EF /* Maven Pro Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Maven Pro Regular.otf"; path = "../../../../Downloads/Schedule Exercise/Fonts/Maven Pro Regular.otf"; sourceTree = "<group>"; };
+		84131553254B8F8900F0B6EF /* cardDetailsTableviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardDetailsTableviewCell.swift; sourceTree = "<group>"; };
+		8413155B254BA79800F0B6EF /* detailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84131562254CA18F00F0B6EF /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +113,10 @@
 			children = (
 				84131516254B77AD00F0B6EF /* AppDelegate.swift */,
 				84131518254B77AD00F0B6EF /* SceneDelegate.swift */,
+				8413155B254BA79800F0B6EF /* detailsModel.swift */,
 				8413151A254B77AD00F0B6EF /* ViewController.swift */,
+				84131553254B8F8900F0B6EF /* cardDetailsTableviewCell.swift */,
+				84131549254B851800F0B6EF /* Resources */,
 				8413151C254B77AD00F0B6EF /* Main.storyboard */,
 				8413151F254B77AE00F0B6EF /* Assets.xcassets */,
 				84131521254B77AE00F0B6EF /* LaunchScreen.storyboard */,
@@ -128,6 +143,16 @@
 			path = ScheduleUITests;
 			sourceTree = "<group>";
 		};
+		84131549254B851800F0B6EF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8413154B254B853700F0B6EF /* LeagueGothic-Regular.otf */,
+				8413154A254B853700F0B6EF /* Maven Pro Bold.otf */,
+				8413154C254B853700F0B6EF /* Maven Pro Regular.otf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +169,9 @@
 			dependencies = (
 			);
 			name = Schedule;
+			packageProductDependencies = (
+				84131561254CA18F00F0B6EF /* Kingfisher */,
+			);
 			productName = Schedule;
 			productReference = 84131513254B77AD00F0B6EF /* Schedule.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +243,9 @@
 				Base,
 			);
 			mainGroup = 8413150A254B77AD00F0B6EF;
+			packageReferences = (
+				84131560254CA18F00F0B6EF /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 84131514254B77AD00F0B6EF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,8 +262,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8413154F254B853700F0B6EF /* Maven Pro Regular.otf in Resources */,
+				8413154E254B853700F0B6EF /* LeagueGothic-Regular.otf in Resources */,
 				84131523254B77AE00F0B6EF /* LaunchScreen.storyboard in Resources */,
 				84131520254B77AE00F0B6EF /* Assets.xcassets in Resources */,
+				8413154D254B853700F0B6EF /* Maven Pro Bold.otf in Resources */,
 				8413151E254B77AD00F0B6EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,8 +292,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84131554254B8F8900F0B6EF /* cardDetailsTableviewCell.swift in Sources */,
 				8413151B254B77AD00F0B6EF /* ViewController.swift in Sources */,
 				84131517254B77AD00F0B6EF /* AppDelegate.swift in Sources */,
+				8413155C254BA79800F0B6EF /* detailsModel.swift in Sources */,
 				84131519254B77AD00F0B6EF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -593,6 +629,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84131560254CA18F00F0B6EF /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.13.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84131561254CA18F00F0B6EF /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84131560254CA18F00F0B6EF /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8413150B254B77AD00F0B6EF /* Project object */;
 }
